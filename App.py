@@ -233,7 +233,7 @@ elif app_mode == 'Fitness Assistant':
 
     # cv2.putText(img, str(int(fps)), (50, 100), cv2.FONT_HERSHEY_PLAIN, 5,
     # (255, 0, 0), 5)
-if app_mode == "Yoga Pose Detector":
+#if app_mode == "Yoga Pose Detector":
     # js = "window.open('https://streamlit.io')"  # New tab or window
     # js = "window.location.href = 'D:/FITNESSIFY/yoga/yoga.html'"  # Current tab
     # html = '<img src onerror="{}">'.format(js)
