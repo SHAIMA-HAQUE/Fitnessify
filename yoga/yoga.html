@@ -4,14 +4,50 @@
     <meta charset="utf-8">
     <title>Yoga Detector</title>
     <link rel="stylesheet" href="D:\Fitnessify\styles.css">
-    
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color:  rgb(220, 147, 236);
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: rgb(188, 217, 236);
+        }
+        </style>
+    </head>
+  <body>
+      <div><h1 style = "text-align:center">Yoga Detector </h1></div>
+  
+      <div>
+      <p style = "text-align:center"> Good posture includes sitting upright, having the top one-third of the monitor at your eye-level, and having your ears and shoulders aligned. </p>
+      <p style = "text-align:center"> Bad posture includes slouching, uneven shoulders, and tilted heads. </p>
+      <p style = "text-align:center"> Neutral posture occurs when no one is visible in the frame. </p>
+      </div>
+      
     </head>
     <body>
-        <div><h1 style = "text-align:center;">Yoga Pose Detector</h1></div>
-<button type="button" onclick="init()">Start</button>
-<div class = "overlay"></div>
-<div class = "concanvas"><canvas id="canvas"></canvas></div>
-<div id="label-container"></div>
+        
+    <button type="button" onclick="init()">Start</button>
+    <div class="overlay">
+
+    </div>
+    <div class='concanvas'><canvas id="canvas"></canvas></div>
+    <div id="label-container"></div>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
 <script type="text/javascript">
