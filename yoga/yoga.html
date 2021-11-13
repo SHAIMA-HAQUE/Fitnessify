@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>Posture Analyzer</title>
     <link rel="stylesheet" href="styles.css">
+    
     </head>
     <body>
-        <div>Teachable Machine Pose Model</div>
-<button type="button" onclick="init()">Start</button>
-<div><canvas id="canvas"></canvas></div>
+        <div><h1 style = "text-align:center;">Yoga Pose Detector</h1></div>
+<button class ="btn" type="button" onclick="init()">Start</button>
+<div class = "overlay"></div>
+<div class = "concanvas"><canvas id="canvas"></canvas></div>
 <div id="label-container"></div>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
