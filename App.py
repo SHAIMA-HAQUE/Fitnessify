@@ -5,6 +5,10 @@ import tempfile
 import cv2
 import PoseTrackingModule as pm
 import time
+from bokeh.models.widgets import Div
+
+
+
 
 detector = pm.PoseDetector()
 count = 0.5
@@ -56,7 +60,7 @@ def image_resize(image, width=None, height=None, inter=cv2.INTER_AREA):
 
 
 app_mode = st.sidebar.selectbox('Choose the App mode',
-                                ['About App', 'Fitness Assistant']
+                                ['About App', 'Fitness Assistant','Yoga Pose Detector']
                                 )
 
 
@@ -229,3 +233,31 @@ elif app_mode == 'Fitness Assistant':
 
     # cv2.putText(img, str(int(fps)), (50, 100), cv2.FONT_HERSHEY_PLAIN, 5,
     # (255, 0, 0), 5)
+if app_mode == "Yoga Pose Detector":
+    # js = "window.open('https://streamlit.io')"  # New tab or window
+    # js = "window.location.href = 'D:/FITNESSIFY/yoga/yoga.html'"  # Current tab
+    # html = '<img src onerror="{}">'.format(js)
+    # div = Div(text=html)
+    # st.bokeh_chart(div)
+#     st.markdown(
+#     """
+#     <style>
+#     [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
+#         width: 350px;
+#     }
+#     [data-testid="stSidebar"][aria-expanded="false"] > div:first-child {
+#         width: 350px;
+#         margin-left: -350px;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True,
+# )
+#     st.header("Yoga Pose Detector")
+
+#     st.markdown(
+#         """
+#         The Yoga Pose detector helps you 
+        
+#         """
+#     )
