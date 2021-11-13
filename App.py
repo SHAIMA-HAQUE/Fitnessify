@@ -178,7 +178,7 @@ elif app_mode == 'Fitness Assistant':
         img = detector.findPose(img, False)
         lmList = detector.findPosition(img, False)
     # print(lmList)
-        if(lmList != 0):
+        if(len(lmList)> 0):
             angle = detector.findAngle(img, 12, 14, 16)
         per = np.interp(angle, (199, 301), (0, 100))
         bar = np.interp(angle, (199, 301), (650, 100))
